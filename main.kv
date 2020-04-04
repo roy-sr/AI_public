@@ -1,0 +1,19 @@
+#:kivy 1.0.9
+# ref: https://kivy.org/docs/tutorials/pong.html
+
+<Agent>:
+    size: 20, 10
+    canvas:
+        Rotate:
+            angle: self.angle
+            origin: self.center
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+
+<MainWidget>:
+    agent: mainwidget_agent
+
+    Agent:
+        id: mainwidget_agent
