@@ -29,11 +29,11 @@ from datetime import datetime
 
 
 # Run parameters
-maze_file = ["maze_train1","maze_train2","maze_level1","maze_level2","maze_level3"]
-start_pointX = [300,300,300,300,300]
-start_pointY = [400,400,400,400,400]
-end_pointX = [0,0,0,0,0]
-end_pointY = [0,0,0,0,0]
+maze_file = ["maze_train0","maze_train1","maze_train2","maze_level1","maze_level2","maze_level3"]
+start_pointX = [800,0,800,800,435,585]
+start_pointY = [0,600,0,190,0,0]
+end_pointX =   [0,800,0,0,500,585]
+end_pointY =   [600,0,600,400,600,600]
 
 
 run_number = 3
