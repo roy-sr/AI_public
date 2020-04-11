@@ -4,16 +4,56 @@
 <Agent>:
     size: 20, 10
     canvas:
+        PushMatrix
         Rotate:
             angle: self.angle
             origin: self.center
         Rectangle:
             pos: self.pos
             size: self.size
+        PopMatrix
 
+<Sensor1>:
+    size: 10,10
+    canvas:
+        Color:
+            rgba: 1,1,1,1
+        Ellipse:
+            pos: self.pos
+            size: self.size
+<Sensor2>:
+    size: 10,10
+    canvas:
+        Color:
+            rgba: 1,1,1,1
+        Ellipse:
+            pos: self.pos
+            size: self.size
+
+<Sensor3>:
+    size: 10,10
+    canvas:
+        Color:
+            rgba: 1,1,1,1
+        Ellipse:
+            pos: self.pos
+            size: self.size
 
 <MainWidget>:
     agent: mainwidget_agent
+    sensor1: mainwidget_sensor1
+    sensor2: mainwidget_sensor2
+    sensor3: mainwidget_sensor3
 
     Agent:
         id: mainwidget_agent
+#        center: self.parent.center
+    Sensor1:
+        id: mainwidget_sensor1
+        center: self.parent.center
+    Sensor2:
+        id: mainwidget_sensor2
+        center: self.parent.center
+    Sensor3:
+        id: mainwidget_sensor3
+        center: self.parent.center
